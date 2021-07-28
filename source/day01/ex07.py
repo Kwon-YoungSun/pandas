@@ -27,3 +27,5 @@ print('\n')
 df3 = df[:]
 df3.drop(['우현', '인아'], axis=0, inplace=True)
 print(df3)
+
+print(df3.drop(['서준', '인아'], axis=0, inplace=True))
