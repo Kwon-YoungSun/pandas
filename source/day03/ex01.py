@@ -3,7 +3,7 @@ import pandas as pd
 import os
 
 currentPath = os.getcwd()
-
+print(currentPath)
 os.chdir(currentPath+"\source\day03")       # vscode 상에서는 디렉토리 경로를 수동으로 지정해주어야 함
 
 # 파일 경로(파이썬 파일과 같은 폴더)를 찾고, 변수 file_path에 저장
