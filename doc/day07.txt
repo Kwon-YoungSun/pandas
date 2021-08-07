@@ -61,13 +61,18 @@
     2) Period    : 두 시점 사이의 일정한 기간 나타냄
 
     6-1. 다른 자료형을 시게열 객체로 변환
-        1) 문자열을 Timestamp로 변환
+        1) 문자열을 Timestamp로 변환    ==> ex15.py
             to_datetime() : 판다스 Timestamp를 나타내는 datetime64 자료형으로 변환 가능
 
-        2) Timestamp를 Period로 변환
+        2) Timestamp를 Period로 변환    ==> ex16.py
             to_period() 함수 이용
             다양한 freq 옵션의 종류 : 본책 206p 참고
 
     6-2. 시계열 데이터 만들기
-        1) Timestamp 배열
-            
+        1) Timestamp 배열   ==> ex17.py
+        2) Period 배열      ==> ex18.py
+        
+
+    6-3. 시계열 데이터 활용
+        1) 날짜 데이터 분리     ==> ex19.py
+        2) 날짜 인덱스 활용     ==> ex20.py
