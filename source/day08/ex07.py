@@ -5,7 +5,7 @@
 # 라이브러리 불러오기
 import seaborn as sns
 
-# titanic 데이터셋의 부분을 선택하여 데이터프레임 만드릭
+# titanic 데이터셋의 부분을 선택하여 데이터프레임 만들기
 titanic = sns.load_dataset('titanic')
 df = titanic.loc[0:4, 'survived':'age']
 print(df, '\n')
