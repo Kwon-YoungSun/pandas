@@ -1,3 +1,4 @@
+#%%
 # -*- coding: utf-8 -*-
 
 ### 기본 라이브러리 불러오기
@@ -10,7 +11,7 @@ import seaborn as sns
 [Step 1] 데이터 준비 - read_csv() 함수로 자동차 연비 데이터셋 가져오기
 '''
 # CSV 파일을 데이터프레임으로 변환
-df = pd.read_csv('./auto-mpg.csv', header=None)
+df = pd.read_csv('../../datasets/part7/auto-mpg.csv', header=None)
 
 # 열 이름 지정
 df.columns = ['mpg','cylinders','displacement','horsepower','weight',
@@ -137,5 +138,7 @@ y_hat = lr.predict(X)
 plt.figure(figsize=(10, 5))
 ax1 = sns.kdeplot(y, label="y")
 ax2 = sns.kdeplot(y_hat, label="y_hat", ax=ax1)
+plt.xlabel('mpg')
 plt.legend()
 plt.show()
+# %%
